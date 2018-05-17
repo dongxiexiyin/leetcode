@@ -600,4 +600,6 @@ if __name__ == '__main__':
     leetcode = Leetcode()
     while True:
         do_job(leetcode)
-        time.sleep(24 * 60 * 60)
+    for i in range(3, 0, -1):
+        print('Quit in', i, 'seconds...' if i != 1 else 'second...')
+        time.sleep(1)
